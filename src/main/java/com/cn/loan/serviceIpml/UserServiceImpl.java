@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService{
 
 
 	public User getUserById(int userId) {
-		return this.userDao.selectByPrimaryKey(userId);  
+		return userDao.selectByPrimaryKey(userId);
 	}
 
 

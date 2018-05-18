@@ -23,8 +23,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    ${user.userName }
-    ${user.age }
-    <a href="<%=basePath%>user/zzz.do">dian</a>
+  <h1>显示用户：</h1>
+    <p>姓名是：${user.userName }</p>
+    <p>年龄是：${user.age }</p>
+
+
+    <a href="<%=basePath%>user/add.shtml">测试跳转</a>
   </body>
 </html>

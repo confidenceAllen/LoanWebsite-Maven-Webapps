@@ -1,15 +1,16 @@
 package com.cn.loan.service;
 
 import com.cn.loan.pojo.User;
+import org.springframework.stereotype.Component;
 
 
-
+@Component
 public interface UserService {
-	public User getUserById(int userId);  
+	 User getUserById(int userId);
+
+	void addUser(User user);
 	
-	public void addUser(User user);
+	void update(User user);
 	
-	public void update(User user);
-	
-	public void deleteById(int userId);
+	void deleteById(int userId);
 }
